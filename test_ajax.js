@@ -8,7 +8,8 @@ button.onclick= function(){
     $.ajax({
         type: "POST",
         url: "~/start_codecept.py",
-        data: { param: text}
+        data: {},
+        dataType: "jsonp"
       }).done(function( o ) {
          console.log('Marius < Yoda')
       });
