@@ -48,6 +48,7 @@ def open_url(url):
     except:
         print("Invalide URL oder kein Zugriff auf URL möglich")
 
+
 # get grayscale image
 def get_grayscale(image):
     return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY )
