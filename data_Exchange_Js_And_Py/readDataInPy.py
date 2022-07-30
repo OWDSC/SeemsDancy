@@ -6,7 +6,9 @@ app = Flask(__name__)
 cors = CORS(app)
 #Create the receiver API POST endpoint:
 import os
+import ocr_extract
  
+ocr_extract.set_tesseract('pfad zur tesseract.exe')
 
 receivedText = {}   
 
@@ -17,7 +19,8 @@ def startCodeCept():
    os.system('npm run codeceptjs')          # start CodeceptJS
    print("After Harvest")
 
-   readParsedData()
+   url = readParsedData()
+   ergebnis = ocr_extract.process_url(url)              
    return True
 
 def readParsedData(): 
