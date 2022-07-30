@@ -42,8 +42,11 @@ def set_tesseract(path):
 ####
 
 def open_url(url):
-    image = io.imread(url)
-    return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    try:
+        image = io.imread(url)
+        return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    except:
+        print("Invalide URL oder kein Zugriff auf URL möglich")
 
 # get grayscale image
 def get_grayscale(image):
