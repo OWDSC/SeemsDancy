@@ -8,7 +8,7 @@ cors = CORS(app)
 import os
 import ocr_extract
  
-ocr_extract.set_tesseract('pfad zur tesseract.exe')
+ocr_extract.set_tesseract(path ='C:\\Users\\muste\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe')
 
 receivedText = {}   
 

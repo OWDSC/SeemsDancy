@@ -8,7 +8,7 @@ const cars = [{"A":"B"}];
 button.onclick= function(){
     
     // Get the receiver endpoint from Python using fetch:
-    fetch("http://127.0.0.1:5000/receiver",                       // execute the route
+    fetch("http://127.0.0.1:63676/receiver",                       // execute the route
         {
             method: 'POST',
             headers: {
@@ -22,3 +22,4 @@ button.onclick= function(){
 //     javascript_data: data 
 // });
 } 
+
