@@ -265,7 +265,7 @@ def get_artist(input):
     
 def process_url(url, all=True):
 
-    url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuPmO_5fHMKY2NOczsNDO3pDQH4YLfMeXFiQ&usqp=CAU"
+    #url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuPmO_5fHMKY2NOczsNDO3pDQH4YLfMeXFiQ&usqp=CAU"
     print(url)
 
     url_dict = {"URL": url}
