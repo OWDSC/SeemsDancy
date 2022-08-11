@@ -39,7 +39,18 @@ Scenario('test something', async ({ I }) => {
     I.wait(3);
     I.click('Veranstaltungen')
     I.wait(3);
+    //I.click({ xpath: '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div/div[1]/div[1]/div[2]/div/div/div/div/div/div[1]/div/div/div/div/div/div/div[2]/div[2]/div/div/div/div/div/div[1]/div/span/span'})
     I.click('Party')
+
+
+
+
+    //Versuch mehrer Seiten nacheinander aufzurufen
+    locate('<span class="a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5">Interessiert</span>').at(1)
+        .click('Interessiert')
+    // second element
+    //locate('#table td').at(2);
+
     I.wait(3)
     //I.click('Interessiert')
     I.wait(3)
