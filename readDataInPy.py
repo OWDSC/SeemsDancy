@@ -19,7 +19,7 @@ def startCodeCept():
    os.system('npm run codeceptjs')          # start CodeceptJS
    print("After Harvest")
 
-   url = readParsedData()
+   url = str(readParsedData())
    ergebnis = ocr_extract.process_url(url)              
    return True
 

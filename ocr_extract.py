@@ -43,6 +43,7 @@ def set_tesseract(path):
 ####
 
 def open_url(url):
+    
     try:
         image = skimage.io.imread(url)
         return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -264,6 +265,9 @@ def get_artist(input):
     
 def process_url(url, all=True):
 
+    url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuPmO_5fHMKY2NOczsNDO3pDQH4YLfMeXFiQ&usqp=CAU"
+    print(url)
+
     url_dict = {"URL": url}
     
     url_dict["raw_text"] = image_extract(open_url(url), sol='', all=all)
@@ -279,6 +283,7 @@ def process_url(url, all=True):
 
     url_dict["features"] = get_artist(url_dict["key_words"].title())
 
+    print(url_dict)
     return url_dict
 
     
