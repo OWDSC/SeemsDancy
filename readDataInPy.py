@@ -31,6 +31,7 @@ def readParsedData():
  
    print("Ergebnis in Python")
    print(receivedText)
+   return receivedText
    
 if __name__ == "__main__": 
    app.run(debug=True)

@@ -8,7 +8,8 @@ import pandas as pd
 
 import spacy 
 import cv2
-from skimage import io
+#from skimage import io
+import skimage
 
 import datefinder
 import pytesseract
@@ -43,7 +44,7 @@ def set_tesseract(path):
 
 def open_url(url):
     try:
-        image = io.imread(url)
+        image = skimage.io.imread(url)
         return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     except:
         print("Invalide URL oder kein Zugriff auf URL möglich")
