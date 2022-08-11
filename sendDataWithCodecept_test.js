@@ -18,12 +18,12 @@ Scenario('test something', async ({ I }) => {
     I.say('I accepted the cookies')
 
 
-// Login auf Facebook
+// Login auf Facebook --> hier Facebook anmeldedaten angeben
     I.wait(3);
-    I.fillField('E-Mail-Adresse oder Telefonnummer', 'oliver@familie-wieder.de');
+    I.fillField('E-Mail-Adresse oder Telefonnummer', 'hier die email');
     I.wait(3);
     //I.fillField('Passwort', 'Dezentralisierung_ist_die_2ukunft!');
-    I.fillField('Passwort', '');
+    I.fillField('Passwort', 'hier das Passwort');
     I.wait(2);
     I.click('Anmelden');
 
