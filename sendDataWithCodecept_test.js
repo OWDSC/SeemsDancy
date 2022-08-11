@@ -28,21 +28,21 @@ Scenario('test something', async ({ I }) => {
     I.click('Anmelden');
 
     I.wait(10);
-    I.click('Facebook durchsuchen')
-    I.wait(5);
+    //I.click('Facebook durchsuchen')
+    //I.wait(3);
     console.log(suchbegriff)
-    I.fillField('Facebook durchsuchen', suchbegriff);
-    I.wait(5);
+    I.fillField('Facebook durchsuchen', 'Hip-Hop Party');
+    I.wait(3);
     I.click('Suche nach')
 
 
-    I.wait(5);
+    I.wait(3);
     I.click('Veranstaltungen')
-    I.wait(10);
-    I.click('Interessiert')
-    I.wait(5)
-    I.click('Interessiert')
-    I.wait(10)
+    I.wait(3);
+    I.click('Party')
+    I.wait(3)
+    //I.click('Interessiert')
+    I.wait(3)
 
 
     I.wait(3);
