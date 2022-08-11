@@ -23,7 +23,7 @@ Scenario('test something', async ({ I }) => {
     I.fillField('E-Mail-Adresse oder Telefonnummer', 'oliver@familie-wieder.de');
     I.wait(3);
     //I.fillField('Passwort', 'Dezentralisierung_ist_die_2ukunft!');
-    I.fillField('Passwort', 'MADCATZ001');
+    I.fillField('Passwort', '');
     I.wait(2);
     I.click('Anmelden');
 
