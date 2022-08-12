@@ -20,10 +20,10 @@ Scenario('test something', async ({ I }) => {
 
 // Login auf Facebook --> hier Facebook anmeldedaten angeben
     I.wait(3);
-    I.fillField('E-Mail-Adresse oder Telefonnummer', 'hier die email');
+    I.fillField('E-Mail-Adresse oder Telefonnummer', 'Hier die Email angeben');
     I.wait(3);
     //I.fillField('Passwort', 'Dezentralisierung_ist_die_2ukunft!');
-    I.fillField('Passwort', 'hier das Passwort');
+    I.fillField('Passwort', 'hier das Passwort angeben');
     I.wait(2);
     I.click('Anmelden');
 
