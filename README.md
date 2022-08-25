@@ -12,7 +12,7 @@ Installer sind hier zu finden:
 https://tesseract-ocr.github.io/tessdoc/Home.html#binaries
 
 ## Bedienungsanleitung
-Das Ziel war ein ganzheitlicher Workflow, bei dem durch Benutzereingabe auf einer Website ein Web-Harvesting-Prozess ansteoßen wird, dessen Ergebnisse wiederum an die Analyse in Python weitergegeben werden.
+Das Ziel war ein ganzheitlicher Workflow, bei dem durch Benutzereingabe auf einer Website ein Web-Harvesting-Prozess angestoßen wird, dessen Ergebnisse wiederum an die Analyse in Python weitergegeben werden.
 
 Zum Ausprobieren können folgende Schritte befolgt werden:
 
